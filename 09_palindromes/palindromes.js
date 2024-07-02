@@ -2,7 +2,7 @@ const palindromes = function (text) {
     let noSpaceText = text.toLowerCase().split(' ').join('');
     let arr = [];
     for (let i = 0; i < noSpaceText.length; i++) {
-        if (noSpaceText[i].match(/[a-z]/i)) {
+        if (noSpaceText[i].match(/[a-z|0-9]/i)) {
             arr.push(noSpaceText[i]);
         }
     }
